@@ -59,7 +59,7 @@
   updateParts();
   
   let updatePartsTimeout;
-  storyInput.addEventListener("keydown", e => {
+  storyInput.addEventListener("keypress", e => {
     if (e.key === "Enter" || e.key === ".") {
       updateParts();
     } else {
@@ -72,7 +72,7 @@
   storyInput.addEventListener("paste", updateParts);
   
   let partsOfSpeechTimeout;
-  partsOfSpeechInput.addEventListener("keydown", e => {
+  partsOfSpeechInput.addEventListener("keypress", e => {
     if (partsOfSpeechTimeout) {
       clearTimeout(partsOfSpeechTimeout);
     }
