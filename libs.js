@@ -60,9 +60,7 @@
   
   let updatePartsTimeout;
   storyInput.addEventListener("keydown", e => {
-    if (e.ctrlKey) {
-      return;
-    } else if (e.key === "Enter" || e.key === ".") {
+    if (e.key === "Enter" || e.key === ".") {
       updateParts();
     } else {
       if (updatePartsTimeout) {
