@@ -29,4 +29,10 @@ textarea {
 
 .replace-input {
   margin-left: 8px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.final-story {
+  white-space: pre-wrap;
 }
