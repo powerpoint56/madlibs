@@ -1,0 +1,31 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+input {
+  padding: 4px;
+}
+
+textarea {
+  padding: 4px;
+}
+
+.story-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+.parts-of-speech label {
+  display: block;
+  padding: 4px;
+}
+
+.replace-input {
+  margin-left: 8px;
+}
