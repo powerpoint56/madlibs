@@ -6,17 +6,17 @@
   let partsOfSpeechInput = jd.f(".parts-of-speech");
   
   
-  let speechRegex = /\[([\w\s]+)\]/g;
+  let bracketedRegex = /\[([^\]]+)\]/g; /\[([^\]]+)\]/g
   let updateParts = () => {
     let madlib = storyInput.value;
     localStorage.setItem("story", madlib);
     
     let partsOfSpeech = [];
     
-    let match = speechRegex.exec(madlib);
+    let match = bracketedRegex.exec(madlib);
     while (match != null) {
       partsOfSpeech.push(match[1]);
-      match = speechRegex.exec(madlib);
+      match = bracketedRegex.exec(madlib);
     }
     
     {
@@ -42,7 +42,6 @@
   };
   
   
-  let bracketedRegex = /\[([\w\s]+)\]/g;
   let updateStory = () => {
     let madlib = storyInput.value;
     
